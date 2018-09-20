@@ -3,6 +3,7 @@
   "version": "0.0.1-prealpha",
   "description": "Shared decorators and helper fns for other vaypr packages",
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc",
     "clean": "rimraf dist",

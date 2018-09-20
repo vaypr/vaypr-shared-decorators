@@ -2,6 +2,7 @@
   "compilerOptions": {
     "alwaysStrict": true,
     "module": "commonjs",
+    "declaration": true,
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
     "noUnusedLocals": true,
