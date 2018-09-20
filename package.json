@@ -1,0 +1,35 @@
+{
+  "name": "@vaypr/shared-decorators",
+  "version": "0.0.1-prealpha",
+  "description": "Shared decorators and helper fns for other vaypr packages",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "clean": "rimraf dist",
+    "dev": "npm run start:dev",
+    "prestart": "npm run clean && npm run build",
+    "start": "npm run clean && NODE_ENV=production node dist/main.js",
+    "start:dev": "npm run clean && run-p start:dev:**",
+    "start:dev:watch": "npm run build -- -w --sourceMap",
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vaypr/vaypr-shared-decorators.git"
+  },
+  "author": "Chris Pawlukiewicz <hi@paynoattn.com>",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/vaypr/vaypr-shared-decorators/issues"
+  },
+  "homepage": "https://github.com/vaypr/vaypr-shared-decorators#readme",
+  "devDependencies": {
+    "@types/node": "^10.10.1",
+    "npm-run-all": "^4.1.3",
+    "rimraf": "^2.6.2",
+    "typescript": "^3.0.3"
+  },
+  "dependencies": {
+    "reflect-metadata": "^0.1.12"
+  }
+}
